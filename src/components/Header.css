@@ -1,0 +1,253 @@
+/* Main  */
+
+.h-container {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  overflow: hidden;
+}
+
+
+/* Video  */
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Sound  */
+
+.sound-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Components  */
+
+.h-component {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+}
+
+
+/* Logo  */
+
+.logo {
+  text-decoration: underline red;
+  font-weight: 500;
+  font-size: 40px;
+  padding: 5px;
+  color: rgb(12, 236, 218);
+  box-shadow: 5px 7px 20px -5px rgb(12, 236, 218);
+  transform: translateX(0);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+  box-shadow: 5px 7px 20px -5px red;
+  transform: translateX(10px);
+  transition: 2s ease-in-out;
+}
+
+
+/* Menu   */
+
+.Menu-bar{
+  font-size: 2rem;
+  top: 0;
+  align-items: center;
+  gap: 2px;
+}
+
+.menu {
+  position: absolute;
+  top: 5px;
+  right: 3rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+
+  z-index: 1001;
+  transition: 5s ease-in-out;
+}
+
+.MenuItem {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #1e1e1e;
+  transition: 2s ease-in-out;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 5;
+}
+.MI-links {
+  margin: px;
+}
+.MenuItem .closeMenu {
+  margin: 15px;
+  padding: 2px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 20px;
+}
+
+.SubTitle {
+    color: rgb(153, 134, 134);
+  list-style: none;
+}
+
+.SubTitle li {
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20rem;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.SubTitle li:hover {
+    color: aquamarine;
+    transform: translateY(-5px);
+    transition: transform 1s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.MT-mainTitle {
+    height: 50px;
+    width: 350px; /* Adjusted width to auto */
+    border-radius: 20rem;
+    overflow: hidden; 
+    position: relative;
+}
+
+.MT-mainTitle:hover {
+    color: rgb(177, 174, 18);
+    transform: translateY(-5px);
+    transition: transform 1s ease-in-out;
+}
+
+
+
+.menu-footer {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MI-Titles {
+  justify-content: space-between;
+}
+
+.MIF-left{
+    position: relative;
+    gap: 5px;
+}
+
+.MIF-right{
+    gap: 5px;
+}
+
+
+
+
+/* Text container  */
+
+.h-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.ht-box {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+}
+
+.h-text-animation h1 {
+  text-align: center;
+  font-weight: 700;
+  line-height: -0;
+  color: rgb(145, 206, 201);
+}
+
+/* CSS */
+@media screen and (max-width: 768px) {
+  .MenuItem {
+    flex-direction: column;
+    position: fixed;
+    display: flex;
+    justify-content: center; /* Center align items */
+    font-size: 10px;
+    align-items: center; /* Center align items */
+    top: 0; /* Position from top */
+    left: 0; /* Position from left */
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    z-index: 100; /* Ensure it's on top */
+  }
+
+  .MI-Titles{
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .MenuItem .closeMenu {
+    color: white; /* Color for close menu */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .Menu-bar{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+  .Menu-bar{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  h1 {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+  .Menu-bar{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
